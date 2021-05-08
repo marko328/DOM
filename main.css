@@ -1,0 +1,32 @@
+.error {
+    border: 2px solid red;
+}
+
+.correct {
+    border: 2px solid green;
+}
+
+.error-icon,
+.correct-icon {
+    position: absolute;
+    right: 15px;
+    top: 27px;
+    display: none;
+}
+
+.error-icon {
+    color: red;
+    display: none;
+}
+.correct-icon {
+    color: green;
+    display: none;
+}
+
+.show {
+    display: inline;
+}
+
+.hide {
+    display: none;
+}
