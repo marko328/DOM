@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 - Website Building</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        #login-container {
+            width: 460px;
+            margin: 0 auto;
+        }
+
+        form label,
+        form input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        form input {
+            padding: 8px;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form div {
+            margin: 16px 0px;
+            position: relative;
+        }
+    </style>
+    <link rel="stylesheet" href="./JQuery/main.css">
+</head>
+
+<body>
+
+    <div id="login-container">
+
+        <form>
+            <div>
+                <label for="username">Username:</label>
+                <i class="fas fa-times fa-lg error-icon" id="error-icon-username"></i>
+                <i class="fas fa-check fa-lg correct-icon" id="correct-icon-username"></i>
+                <input id="username" type="text">
+            </div>
+
+            <div>
+                <label for="password">Password:</label>
+                <i class="fas fa-times fa-lg error-icon" id="error-icon-password"></i>
+                <i class="fas fa-check fa-lg correct-icon" id="correct-icon-password"></i>
+                <input id="password" type="password">
+            </div>
+
+            <input type="submit" value="Login">
+        </form>
+        <div id="message-username"></div>
+        <div id="message-password"></div>
+    </div>
+    <script src="./JQuery/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/4237cae3ff.js" crossorigin="anonymous"></script>
+    <script src="./JQuery/app.js"></script>
+
+</body>
+
+</html>
