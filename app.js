@@ -27,7 +27,7 @@ $('#login-container').submit(function (e) {
         $("#username").removeClass("correct");
         $('#correct-icon-username').hide();
     }
-    //* IF-ELSE-IF FOR PASSWORF INPUT
+    //* IF-ELSE-IF FOR PASSWORD INPUT
     if (userPasswordInput === "") {
         $('#password').addClass('error');
         $("#message-password").text('* Please, enter password');
